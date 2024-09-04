@@ -1,0 +1,449 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  list-style: none;
+  text-decoration: none;
+}
+header {
+  background-color: #ffdcc2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+}
+footer{
+  background-color: #ffdcc2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0e364f;
+}
+header div img {
+  width: 70px;
+}
+aside{
+  width: 100%;
+}
+aside ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside ul li, .btnMenu{
+  border: 5px solid #fdc193;
+  border-bottom: 0px;
+  padding: 15px 35px;
+  color: #0e364f;
+  font-size: larger;
+  cursor: pointer;
+  transition: all .5s ease;
+  background-color: white;
+  
+}
+
+.btnMenu{
+  display: none;
+}
+aside li:hover{
+  background-color: #0e364f;
+  color: white;
+}
+.login {
+  background-color: #ffdcc2;
+  height: 85vh;
+}
+.cadastrado {
+  background-color: white;
+  height: 650px;
+  width: 700px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #fdc193;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.cadastrado h1 {
+  font-size: 50px;
+  margin: 100px;
+}
+.cadastrado div {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  font-size: 25px;
+  color: #0e364f;
+}
+.cadastrado div input {
+  height: 60px;
+  font-size: 20px;
+  outline: none;
+  border-color: #0e364f;
+  padding: 5px;
+  border: 2px solid #fdc193;
+  border-radius: 5px;
+}
+.cadastrado button {
+  margin-top: 20px;
+  background-color: #0e364f;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: bolder;
+}
+.cadastrado button:hover {
+  background-color: #fdc193;
+  color: #0e364f;
+}
+
+
+.paginaDestino{
+  min-height: 80vh;
+}
+.paginaDestino h1{
+  text-align: center;
+  font-size: 35px;
+  /* padding: 10px; */
+}
+.cardDestino{
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid #fdc193;
+  border-radius: 5px;
+  height: 200px;
+  min-height: 200px;
+  margin: auto;
+}
+.cardDestino div:nth-child(1){
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardDestino img{
+  width: 80%;
+}
+.cardDestino div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  height: 100%;
+  padding: 20px;
+  border-left: 2px solid #fdc193;
+}
+
+.loginanimacao {
+  width: 100px;
+  border-radius: 100%;
+}
+.gpanimacao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+}
+.loginanimacao:nth-child(1) {
+  animation: moverpao 10s linear infinite;
+}
+.loginanimacao:nth-child(2) {
+  animation: moverpao 6s linear infinite;
+}
+.loginanimacao:nth-child(3) {
+  opacity: 0 !important;
+  animation: moverpao 20s linear infinite;
+}
+.loginanimacao:nth-child(4) {
+  opacity: 0 !important;
+  animation: moverpao 7s linear infinite;
+}
+.loginanimacao:nth-child(5) {
+  animation: moverpao 4s linear infinite;
+}
+.loginanimacao:nth-child(6) {
+  animation: moverpao 6s linear infinite;
+}
+.loginanimacao:nth-child(7) {
+  animation: moverpao 10s linear infinite;
+}
+.loginanimacao:nth-child(8) {
+  animation: moverpao 3s linear infinite;
+}
+
+.linha {
+  border: 3px solid #fdc193;
+  /* box-shadow: 2px 2px 10px white; */
+  width: 100%;
+}
+.inicial {
+  background-color: #ffdcc2;
+  min-height: 85vh;
+  padding: 20px 0px;
+}
+.inicialPesquisa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 690px;
+  margin: auto;
+  background-color: white;
+  height: 78px;
+  border-radius: 8px;
+}
+.inicialPesquisa input {
+  outline: none;
+  border: none;
+  width: 90%;
+  padding: 15px 5px;
+  font-size: large;
+}
+.inicialPesquisa img {
+  width: 7%;
+
+  height: 100%;
+  cursor: pointer;
+}
+.destaques {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.destaqueCard {
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  margin: 20px 30px;
+  transition: all .3s ease;
+  cursor: pointer;
+  border: 2px solid #ffdcc2;
+}
+.destaqueCard:hover{
+  border: 2px solid #fdc193;
+  box-shadow: 5px 5px 10px #fdc193;
+}
+.destaqueImg {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.destaqueCard img {
+  width: 75%;
+  border-radius: 6px;
+}
+.destaqueTexto {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px 0px 10px;
+  position: relative;
+  text-align: justify;
+}
+.destaqueCard button {
+  background-color: #fdc193;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+  border: none;
+  width: 160px;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+.destaqueTexto button:hover{
+  box-shadow: 2px 2px 5px #fdc193;
+
+}
+.paginaReceita {
+  background-color: #ffdcc2;
+  min-height: 85vh;
+}
+.DadosReceita {
+  background-color: white;
+  width: 70%;
+  min-height: 400px;
+  margin: auto;
+  border-radius: 8px;
+  padding: 10px;
+}
+.DadosReceita h1 {
+  background-color: #f3f3f3;
+  border: 2px solid lightslategrey;
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: larger;
+  text-align: center;
+}
+.receita {
+  background-color: #f3f3f3;
+  border: 2px solid lightslategrey;
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+.imgcomida{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgcomida img{
+  width: 20%;
+  padding: 20px;
+}
+.comentarios{
+  background-color: white;
+  width: 70%;
+  margin: 30px auto;
+  border-top: 2px solid #fdc193;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+.comentarios h2{
+  padding: 10px;
+}
+
+
+
+.voltar{
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  width: 50px;
+  height: 50px;
+  transition: all .4s ease;
+  border-radius: 5px;
+ 
+}
+.voltar:hover{
+  cursor: pointer;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.voltar img{
+  width: 100%;
+}
+@keyframes moverpao {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.1;
+  }
+  25% {
+    transform: translate(0, -20vh);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(0, -40vh);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translate(0, -60vh);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(0, -80vh);
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 768px) {
+  header div img{
+    width: 100px;
+  }
+  .cadastrado {
+    width: 90%;
+    height: 90%;
+  }
+  .cadastrado h1 {
+    margin: 50px;
+  }
+  .cadastrado div {
+    width: 90%;
+  }
+
+  .inicialPesquisa{
+    width: 90%;
+  }
+  .destaques{
+    width: 100%;
+  }
+  .destaqueCard{
+    width: 90%;
+    
+  }
+  .voltar{
+    top: 30px;
+    left: 30px;
+  }
+  .imgcomida img{
+    width: 50%;
+  }
+  .paginaReceita{
+   padding-top: 20px;
+  }
+  aside{
+    position: relative;
+    height: 100px;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .menu li{
+    width: 350px;
+    text-align: center;
+    background-color: #fdc193;
+    z-index: 999;
+    border-bottom: 2px solid #0e364f;
+    padding: 20px;
+  }
+  .btnMenu{
+    display: flex;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdcc2;
+    border: 2px solid #ffdcc2;
+    border-bottom: 2px solid #0e364f;
+  }
+
+  .visibilidade{
+    opacity: 0;
+  }
+}
